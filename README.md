@@ -137,6 +137,10 @@ cluster-rw:5432:app:app:password
 
 Use the retrieved credentials to configure CNPG as a data source in Grafana. Below are example screenshots of the configuration process:
 
+Host url: `<cluster-name>.<namespace>`
+
+**Note that specifying the namespace is necessary only if your CNPG cluster is deployed within a namespace.
+
 ![Data Source Configuration](https://github.com/user-attachments/assets/214f3a92-b203-4835-8004-d2cff92df231)
 
 ![Final Data Source Setup](https://github.com/user-attachments/assets/ce525bee-1405-4b23-9f84-ac0b6dd1cb00)
@@ -212,7 +216,9 @@ After logging into the pgAdmin 4 interface, follow these steps:
 
 2. Use the same credentials you used when configuring the Grafana data source.
 
+Host url: `<cluster-name>.<namespace>`
 
+**Note that specifying the namespace is necessary only if your CNPG cluster is deployed within a namespace.
 
 Below is an example of the setup:
 
